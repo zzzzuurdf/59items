@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>50天50个前端小Demo</title>
+  </head>
+  <body>
+    <a href="https://github.com/bradtraversy/50projects50days"
+      >原项目Github地址</a
+    >
+    <a href="https://github.com/Jplusztx/50day50projects">个人项目Github地址</a>
+    <script>
+      const fragment = document.createDocumentFragment();
+      const arr = [
+        {
+          name: "Day 1: 展开卡片",
+          path: "day01_expandingCard",
+        },
+        {
+          name: "Day 2: 步骤条",
+          path: "day02_progressSteps",
+        },
+        {
+          name: "Day 3: 旋转导航栏动画",
+          path: "day03_rotateNavigation",
+        },
+        {
+          name: "Day 4: 隐藏搜索",
+          path: "day04_hiddenSearch",
+        },
+        {
+          name: "Day 5: 加载模糊效果",
+          path: "day05_blurryLoading",
+        },
+        {
+          name: "Day 6: 滚动动画",
+          path: "day06_scrollAnimation",
+        },
+        {
+          name: "Day 7: 页面动画",
+          path: "day07_splitLandingPage",
+        },
+        {
+          name: "Day 8: 字体波动动画",
+          path: "day08_waveInputAnimation",
+        },
+        {
+          name: "Day 9: 常见问题卡片效果",
+          path: "day09_FAQ",
+        },
+        {
+          name: "Day 10: 随机选择",
+          path: "day10_randomChoicePicker",
+        },
+        {
+          name: "Day 11: 数字增涨动画",
+          path: "day11_incrementCounter",
+        },
+        {
+          name: "Day 12: 背景切割",
+          path: "day12_backgroundSlider",
+        },
+        {
+          name: "Day 13: 主题切换 时钟",
+          path: "day13_themeClock",
+        },
+        {
+          name: "Day 14: 按钮波纹特效",
+          path: "day14_buttonRippleEffect",
+        },
+        {
+          name: "Day 15: 拖拽",
+          path: "day15_dragAndDrop",
+        },
+        {
+          name: "Day 16: Hover Board",
+          path: "day16_hoverBoard",
+        },
+        {
+          name: "Day 17: 通知弹窗",
+          path: "day17_notification",
+        },
+        {
+          name: "Day 18: 骨架屏",
+          path: "day18_contentPlaceHolder",
+        },
+        {
+          name: "Day 19: Sticky Navbar",
+          path: "day19_stickyNavbar",
+        },
+        {
+          name: "Day 20: Sticky Navbar By JavaScript",
+          path: "day20_stickyNavbarByJS",
+        },
+        {
+          name: "Day 21: Range Slider",
+          path: "day21_rangeSlider",
+        },
+        {
+          name: "Day 22: 计数器",
+          path: "day22_counter",
+        },
+        { name: "Day 23: 轮播图(存在bug)", path: "day23_carousel_withBug" },
+        { name: "Day 24: 语句拼写", path: "day24_spellSentence" },
+        {
+          name: "Day 25: 苹果商城卡片效果(仿B站: CodeStartingUp)",
+          path: "day25_appleStoreCard",
+        },
+        {
+          name: "Day 26: 打勾动画",
+          path: "day26_check",
+        },
+        { name: "Day 27: 框选项目", path: "day27_choiceItem" },
+        { name: "Day 28: 多行文本省略", path: "day28_textEllipsis" },
+        { name: "Day 29: 贪吃蛇", path: "day29_gluttonousSnake" },
+      ];
+      arr.forEach((i) => {
+        const h4 = document.createElement("h4");
+        const a = document.createElement("a");
+        a.href = `./projects/${i.path}/index.html`;
+        a.textContent = i.name;
+        h4.appendChild(a);
+        fragment.appendChild(h4);
+      });
+      document.body.appendChild(fragment);
+    </script>
+  </body>
+</html>
